@@ -1,0 +1,22 @@
+
+1. api tipo POST debe ser invocada por medio de /categorias/save  esta api debe recibir 
+los campos cod_cat, nombre, estado,  
+
+1.2. el cod_cat debe ser de maximo 5 caracteres, solo números, y es un campo obligatorio, 
+
+1.3. el campo nombre es obligatorio, máximo 50 caracteres, mínimo 3 caracteres, y campo obligatorio, 
+
+1.4. el campo estado, solo acepta valores True o False y es un campo obligatorio
+
+
+2. api tipo POST debe ser invocada por medio de /productos/save, esta api recibe los siguientes 
+2.1. parámetros, cod_cat que debe ser un código existente en la lista de categorías, no se acepta un código de categoría no existente,
+ 
+2.2. cod_producto  es un campo obligatorio, el código es de solo letras o números o combinados, la longitud máxima del código es de 15, el cod_producto no debe existir con anterioridad, el siguiente 
+
+2.3. campo es el nombre cuya longitud máxima es de 50 y mínima de 4, este campo es obligatorio.  
+
+
+3. api tipo GET debe ser invocada por medio de /productos/listar, esta api retorna la lista de los productos creados
+
+Nota recuerden crear los elementos necesarios para almacenar como arrays e implementar métodos de búsqueda dentro de arrays
